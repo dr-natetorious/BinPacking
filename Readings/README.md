@@ -51,15 +51,22 @@ You must start by selecting the `box-type` with the maximum length that fits. Of
 
 S. Krisadee and W. Jindaluang, "An Improvement of a Heuristic Algorithm for 3D Bin-Packing Problem," 2024 28th International Computer Science and Engineering Conference (ICSEC), Khon Kaen, Thailand, 2024, pp. 1-6, doi: 10.1109/ICSEC62781.2024.10770638. keywords: {Computer science;Three-dimensional displays;Shape;Heuristic algorithms;Memory management;3D bin-packing problem;spatial layer-based heuristic;Three-Stage Layer-Based Heuristic (TSLBH)}. [IEEE](https://ieeexplore.ieee.org/document/10770638). [pdf](An_Improvement_of_a_Heuristic_Algorithm_for_3D_Bin-Packing_Problem.pdf).
 
- The authors propose a procedure using a three-staged version of [Y. Harrath's 3D bin-packing algorithm](Harrath_2020.pdf). This approach reduces (bins, processing time, and memory) decreased to (39%, 58%, and 64%) for large bin counts.
-
-### Layer-Based Heuristic Approach
-
-Dividing the bin into `layers` is a common strategy for optimizing 3D bin-packing. 
+The authors propose a procedure using a three-staged version of [Y. Harrath's 3D bin-packing algorithm](Harrath_2020.pdf). This approach reduces (bins, processing time, and memory) decreased to (39%, 58%, and 64%) for large bin counts.
 
 > There are numerous approaches to solving the 3D binpacking problem. One of the basic concepts for solving this problem is the Layer-Based Heuristic approach, as described by [5]. This method uses heuristics to find solutions in each layer within the bin, as illustrated in Fig.2. The approach involves selecting the appropriate type and number of boxes for each layer until no more boxes can fit, indicating the completion of packing for that bin. 
 
 ![layers.png](layers.png)
+
+### The issue of using the maximum volume pattern
+
+> As seen in Fig.6, selecting a layout with the largest volume only might notnachieve the goal of utilizing the fewest number of bins. There
+may be only one type of box in the pattern with the maximum volume. As shown in this figure, a pattern with the maximum volume indicates that we should pack a box of type 2 with an amount of 147. Meanwhile, in a configuration, we have 3 types of boxes with amounts 17, 7, and 76, respectively.
+
+Harrath's algorithm begins the **setting bounds** operation by placing homogenous boxes. This is efficient when the `count(box-type)` is low, but more likely to have gaps and changing patterns is high. 
+
+The authors address this through a memorization optimization technique during the layered-heuristic's second and third stage. 
+
+![optimization.png](optimization.png)
 
 ## A new approach for bin packing problem using knowledge reuse and improved heuristic (2024)
 
