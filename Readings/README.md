@@ -68,6 +68,29 @@ The authors address this through a memorization optimization technique during th
 
 ![optimization.png](optimization.png)
 
+## ACO-based Placement Strategy (2024)
+
+DUAN, L.-T.; WANG, J.; WANG, H.-Y. An energy-aware ant colony optimization strategy for virtual machine placement in cloud computing. Cluster Computing: The Journal of Networks, Software Tools and Applications, [s. l.], v. 27, n. 10, p. 14269–14282, 2024. DOI 10.1007/s10586-024-04670-6. Disponível em: https://research.ebsco.com/linkprocessor/plink?id=9abdb06c-b7e4-3dfc-a954-f94eb89dfb4d. Acesso em: 11 jan. 2025. [springer](https://link.springer.com/content/pdf/10.1007/s10586-024-04670-6?pdf=openurl). [pdf](Ant_colony.pdf).
+
+The authors propose an ACO-based placement strategy that minimizes the energy consumption and maximizing the server resource utilization. It models the the `virtual machine` and `physical host` as an energy consumers and blocks. Consumed energy is based on CPU-usage as weighted sum of idle and utilization percentages. 
+
+![eeacs_flow.png](eeacs_flow.png)
+
+Beyond the environmential impact, this approach improves the placement of scheduled tasks and bursty processes. This capability is beneficial in scenarios like layer-heuristics with several potential `box-type` or `bins` to target.
+
+Their results also demonstrate the the multi-objective Energy Efficient placement (EEACS) outperforms vanilla ACO and comparable to `Find-First Desending`.
+
+![eeacs_count.png](eeacs_count.png)
+
+While `Least-Loaded` has similar density to `EEACS`, it has least efficient resource utilization.
+
+![eeacs_energy.png](eeacs_energy.png)
+
+## A Genetic Algorithm-Based Placement Strategy (2019)
+
+R. Zhang, Y. Chen, B. Dong, F. Tian and Q. Zheng, "A Genetic Algorithm-Based Energy-Efficient Container Placement Strategy in CaaS," in IEEE Access, vol. 7, pp. 121360-121373, 2019, doi: 10.1109/ACCESS.2019.2937553. keywords: {Containers; Energy consumption; Genetic algorithms;Servers;Biological cells;Resource management;Degradation;CaaS;container placement;genetic algorithm;exchange mutation operation} [IEEE](https://ieeexplore.ieee.org/document/8813096). [pdf](A_Genetic_Algorithm-Based_Energy-Efficient_Container_Placement_Strategy_in_CaaS.pdf)
+
+
 ## A new approach for bin packing problem using knowledge reuse and improved heuristic (2024)
 
 Fang, J., Chen, X., Rao, Y., Peng, Y., & Yan, K. (2024). A new approach for bin packing problem using knowledge reuse and improved heuristic. Scientific Reports, 14(1), 1-20. [doi](https://doi.org/10.1038/s41598-024-81749-5). [pdf](Knowledge_Reuse.pdf).
