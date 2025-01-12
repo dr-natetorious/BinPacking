@@ -2,6 +2,29 @@
 
 Given a cohort of machines, what' the best place to run an application? An impossible problem to answer, but there's plenty of approximations for these `Multi-capacity Bin Packing Problems (MCBPP)`.
 
+## Iterated Local Search for MCBPP (2013)
+
+Masson, R., Vidal, T., Michallet, J., Penna, P. H. V., Petrucci, V., Subramanian, A., & Dubedout, H. (2013). An iterated local search heuristic for multi-capacity bin packing and machine reassignment problems. Expert Systems with Applications, 40(13), 5266–5275. [doi](https://doi.org/10.1016/j.eswa.2013.03.037). [pdf](local_search_MCBPP.pdf)
+
+### MCBPP relation to MRP 
+
+> The problem of allocating a set of processes across a pool of server machines is basically a bin-packing problem where each of the machines is a bin. The goal is to allocate as many processes as possible into each bin, while respecting multiple capacity constraints. This problem is referred in the literature as the **Multi-Capacity Bin Packing Problem (MCBPP)**, also known as the **Vector Bin Packing Problem**. In a more complex scenario, we consider the **Machine Reassignment Problem (MRP)** which consists of optimizing the usage of available machine resources by reallocating processes to different machines in a cost-efficient manner.
+
+The authors provide formal descriptions and definitions for these three variations. There are also formal definitions for [Google's MRP dataset](https://roadef.org/challenge/2012/en/index.php). 
+
+### Shaking Operators
+
+> Shaking operators are potentially-deteriorating moves which provide the means to escape from locally optimal solutions. Two shaking operators are considered in the proposed method, and called in turn. Note that only feasible shaking moves are applied.
+
+- The **Home Relocate shaking operator** selects randomly nprocesses that are currently not hosted on their initial machine, and relocates them to their initial machine. This move tends to be par-ticularly efficient for reducing the process move costs in MRP context.
+- The **K-Swap shaking operator** randomly selects ntimes a pair of machines, and performs a swap of random groups of either 3, 4, or 5 processes, with equal probability, among these machines. These two operators modify the solution in such a way that it cannot be directly reversed by simply applying a single local-search move.
+
+![shake_operators.png](shake_operators.png)
+
+### Local Search Process
+
+![ms-il-pp_flow.png](ms-il-pp_flow.png)
+
 ## Survey of Approaches to Google Machine Reassignment Problem (2020)
 
 Dario Canales, Nicolas Rojas-Morales, & Maria-Cristina Riff. (2020). A Survey and a Classification of Recent Approaches to Solve the Google Machine Reassignment Problem. IEEE Access, 8, 88815–88829. [doi](https://doi.org/10.1109/ACCESS.2020.2993563). [pdf](A_Survey_and_a_Classification_of_Recent_Approaches_to_Solve_the_Google_Machine_Reassignment_Problem.pdf)
@@ -44,11 +67,6 @@ Other papers extended the action space to include:
 ### Using item centric heuristics
 
 > Authors conclude that instances can be decomposed into smaller subproblems and showed that the mentioned heuristics can be adapted to the MRP. Based on this, a multi-start algorithm was proposed to generate feasible solutions assigning all processes (instead of using the provided initial solution s0). Even though the MRP is a very constrained problem, the proposed heuristics were able to assign more than the 90% of the processes in all the instances. Authors denote that the best heuristics, in terms of the number of feasible solutions, were the item centric heuristics with priorities on processes and machines (randomly ordered or normalized by bins capacities).
-
-## Iterated local search for MCBPP (2013)
-
-Masson, R., Vidal, T., Michallet, J., Penna, P. H. V., Petrucci, V., Subramanian, A., & Dubedout, H. (2013). An iterated local search heuristic for multi-capacity bin packing and machine reassignment problems. Expert Systems with Applications, 40(13), 5266–5275. [doi](https://doi.org/10.1016/j.eswa.2013.03.037). [pdf](local_search_MCBPP.pdf)
-
 
 ## Heuristic for Container Load Problem (2006)
 
