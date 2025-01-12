@@ -95,6 +95,22 @@ Li, Z., Li, Y., Yuan, T., Chen, S., & Jiang, S. (2019). Chemical reaction optimi
 > This kind of problem is called the virtual machine optimal placement problem. In fact, the virtual machine placement (VMP) problem
 can be modeled as a Multi-Packing Problem (MCBPP), which is one of the most popular NP-Hard combinatorial optimization problems. Besides, there are different sized items to be packed into a box of a given capacity. the main objective is to minimize the number of the used boxes. In our case, the items to be packaged can be represented by the VMs and their sizes are represented by the resource utilization.
 
+## Iterated local search for MCBPP (2013)
+
+Masson, R., Vidal, T., Michallet, J., Penna, P. H. V., Petrucci, V., Subramanian, A., & Dubedout, H. (2013). An iterated local search heuristic for multi-capacity bin packing and machine reassignment problems. Expert Systems with Applications, 40(13), 5266–5275. [doi](https://doi.org/10.1016/j.eswa.2013.03.037). [pdf](local_search_MCBPP.pdf)
+
+## Survey of Approaches to Google Machine Reassignment Problem (2020)
+
+Dario Canales, Nicolas Rojas-Morales, & Maria-Cristina Riff. (2020). A Survey and a Classification of Recent Approaches to Solve the Google Machine Reassignment Problem. IEEE Access, 8, 88815–88829. [doi](https://doi.org/10.1109/ACCESS.2020.2993563). [pdf](A_Survey_and_a_Classification_of_Recent_Approaches_to_Solve_the_Google_Machine_Reassignment_Problem.pdf)
+
+## Heuristic for Container Load Problem (2006)
+
+Z. Wang, K. W. Li and X. Zhang, "A Heuristic Algorithm for the Container Loading Problem with Heterogeneous Boxes," 2006 IEEE International Conference on Systems, Man and Cybernetics, Taipei, Taiwan, 2006, pp. 5240-5245, doi: 10.1109/ICSMC.2006.385140. keywords: {Heuristic algorithms;Containers;Partitioning algorithms;Polynomials;Cybernetics;Filling;Acceleration;Globalization;Marine transportation;Rail transportation}, [pdf](A_Heuristic_Algorithm_for_the_Container_Loading_Problem_with_Heterogeneous_Boxes.pdf).
+
+## Packing Irregular Paterns using evolutionary strategies (2010)
+
+Wong, W. K., & Guo, Z. X. (2010). A hybrid approach for packing irregular patterns using evolutionary strategies and neural network. International Journal of Production Research, 48(20), 6061–6084. [doi](https://doi.org/10.1080/00207540903246631). [pdf](Irregular_shapes.pdf)
+
 ## A Genetic Algorithm-Based Placement Strategy (2019)
 
 R. Zhang, Y. Chen, B. Dong, F. Tian and Q. Zheng, "A Genetic Algorithm-Based Energy-Efficient Container Placement Strategy in CaaS," in IEEE Access, vol. 7, pp. 121360-121373, 2019, doi: 10.1109/ACCESS.2019.2937553. keywords: {Containers; Energy consumption; Genetic algorithms;Servers;Biological cells;Resource management;Degradation;CaaS;container placement;genetic algorithm;exchange mutation operation} [IEEE](https://ieeexplore.ieee.org/document/8813096). [pdf](A_Genetic_Algorithm-Based_Energy-Efficient_Container_Placement_Strategy_in_CaaS.pdf)
