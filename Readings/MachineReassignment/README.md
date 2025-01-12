@@ -54,3 +54,11 @@ Masson, R., Vidal, T., Michallet, J., Penna, P. H. V., Petrucci, V., Subramanian
 
 Z. Wang, K. W. Li and X. Zhang, "A Heuristic Algorithm for the Container Loading Problem with Heterogeneous Boxes," 2006 IEEE International Conference on Systems, Man and Cybernetics, Taipei, Taiwan, 2006, pp. 5240-5245, doi: 10.1109/ICSMC.2006.385140. keywords: {Heuristic algorithms;Containers;Partitioning algorithms;Polynomials;Cybernetics;Filling;Acceleration;Globalization;Marine transportation;Rail transportation}, [pdf](A_Heuristic_Algorithm_for_the_Container_Loading_Problem_with_Heterogeneous_Boxes.pdf).
 
+## MCBPP Job Scheduling under constraints (1999)
+
+W. Leinberger, G. Karypis and V. Kumar, "Multi-capacity bin packing algorithms with applications to job scheduling under multiple constraints," Proceedings of the 1999 International Conference on Parallel Processing, Aizu-Wakamatsu, Japan, 1999, pp. 404-412, doi: 10.1109/ICPP.1999.797428. keywords: {Scheduling algorithm;Application software;Processor scheduling;Computational modeling;Contracts;World Wide Web;Computer science;NASA;High performance computing;Military computing} [IEEE](https://ieeexplore.ieee.org/document/797428). [pdf](Multi-capacity_bin_packing_algorithms_with_applications_to_job_scheduling_under_multiple_constraints.pdf).
+
+## Traffic aware VM-packing (2016)
+
+Liu, J., Guo, J., & Ma, D. (2016). Traffic Aware Virtual Machine Packing in Cloud Data Centers. 2016 IEEE 2nd International Conference on Big Data Security on Cloud (BigDataSecurity), IEEE International Conference on High Performance and Smart Computing (HPSC), and IEEE International Conference on Intelligent Data and Security (IDS), Big Data Security on Cloud (BigDataSecurity), IEEE International Conference on High Performance and Smart Computing (HPSC), and IEEE International Conference on Intelligent Data and Security (IDS), 2016 IEEE 2nd International Conference On, 256–261. [doi](https://doi.org/10.1109/BigDataSecurity-HPSC-IDS.2016.37). [pdf](Traffic_Aware_Virtual_Machine_Packing_in_Cloud_Data_Centers.pdf).
+
