@@ -1,4 +1,4 @@
-# 3-dimensional Binpack
+# 3D Binpack
 
 Multi-dimensional bin-packing occurs across industries, such as shipping and logistics, where different shaped `boxes` are sorted into the minimal `bins` that's total `weight` remains under a `limit`.
 
