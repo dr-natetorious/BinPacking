@@ -16,14 +16,34 @@ The Google Machine Reassignment Problem (GMRP) consider the following `component
 be distributed (among machines of different locations). Moreover, for each service, a minimum number of locations where their processes should be assigned is defined (spreadmin). All locations are disjoint sets.
 - **Neighborhood**: is defined as a set of machines. When a dependence relationship between services exists, processes should be assigned on machines of the same neighborhood. All neighborhoods are disjoint sets
 
+### What constraints appeared
+
 > To determine the quality of a candidate solution, the objective function considers a weighted sum of a Load Cost, a Balance Cost, a Process Move Cost, a Service Move Cost, and a Machine Move Cost. The problem also considers a set of constraints that are related to the capacity of themachines, the usage of resources, dependency, among others. For example, each process has system requirements of various resources like CPU, RAM and Hard Disk. On the other hand, machines have a certain capacity limit for each resource. These resources are consumed by each assigned
 process.
 
 ![constraints.png](constraints.png)
 
-These are the different costs dimensions to evaluate: 
+### What cost objectives are in scope
+
+These are the different costs dimensions to proceeding evaluates; using operations like:
+
+- **Shift**: move one process to another machine,
+- **Swap**: interchanges two processes from different
+machines,
+- **Chain**: shift a defined number of processes at the same time,
+- **Big Process Rearrangement (BPR)**: reassign big processes to a target machine. For this, other smaller processes could be also reassigned to generate enough
+space.
+
+Other papers extended the action space to include:
+
+- **Backtracking**: perform an update based on subproblem
+- **Double Shift**: tries to perform Shift operator re-assigning other processes if it is necessary
 
 ![costs.png](costs.png)
+
+### Using item centric heuristics
+
+> Authors conclude that instances can be decomposed into smaller subproblems and showed that the mentioned heuristics can be adapted to the MRP. Based on this, a multi-start algorithm was proposed to generate feasible solutions assigning all processes (instead of using the provided initial solution s0). Even though the MRP is a very constrained problem, the proposed heuristics were able to assign more than the 90% of the processes in all the instances. Authors denote that the best heuristics, in terms of the number of feasible solutions, were the item centric heuristics with priorities on processes and machines (randomly ordered or normalized by bins capacities).
 
 ## Iterated local search for MCBPP (2013)
 
